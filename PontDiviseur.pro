@@ -1,4 +1,4 @@
-update=mar. 11 oct. 2022 21:33:03 CEST
+update=mar. 11 oct. 2022 21:37:31 CEST
 version=1
 last_client=kicad
 [general]
@@ -242,7 +242,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=./PontDiviseur
+PlotDirectoryName=./output
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
