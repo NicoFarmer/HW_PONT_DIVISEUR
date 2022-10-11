@@ -1,0 +1,165 @@
+EESchema Schematic File Version 4
+LIBS:PontDiviseur-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Pont diviseur de tension"
+Date ""
+Rev "V1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CRLG-Connectors:Conn_01x04 J1
+U 1 1 6345B726
+P 2700 2075
+F 0 "J1" H 2900 2075 50  0000 R CNN
+F 1 "Conn_01x04" H 3000 2300 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 2700 2075 50  0001 C CNN
+F 3 "" H 2700 2075 50  0001 C CNN
+	1    2700 2075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CRLG-Connectors:Conn_01x04 J2
+U 1 1 6345BE5B
+P 4225 2075
+F 0 "J2" H 4305 2067 50  0000 L CNN
+F 1 "Conn_01x04" H 4175 2325 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 4225 2075 50  0001 C CNN
+F 3 "" H 4225 2075 50  0001 C CNN
+	1    4225 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1975 4025 1975
+Wire Wire Line
+	4025 2075 3375 2075
+Text Notes 2600 1675 0    50   ~ 10
+Entrée
+Text Notes 4150 1675 0    50   ~ 10
+Sortie
+$Comp
+L CRLG-Passive:R R1
+U 1 1 6345FAD0
+P 3050 2725
+F 0 "R1" H 2980 2679 50  0000 R CNN
+F 1 "R" H 2980 2770 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 2725 50  0001 C CNN
+F 3 "" H 3050 2725 50  0001 C CNN
+	1    3050 2725
+	-1   0    0    1   
+$EndComp
+$Comp
+L CRLG-Passive:R R2
+U 1 1 63460345
+P 3050 3025
+F 0 "R2" H 2980 2979 50  0000 R CNN
+F 1 "R" H 2980 3070 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2980 3025 50  0001 C CNN
+F 3 "" H 3050 3025 50  0001 C CNN
+	1    3050 3025
+	-1   0    0    1   
+$EndComp
+Text Label 3400 1975 0    50   ~ 0
+VCC
+Text Label 3400 2075 0    50   ~ 0
+GND
+Wire Wire Line
+	4025 2175 3600 2175
+Text Label 2950 2175 0    50   ~ 0
+IN_A
+Text Label 2950 2275 0    50   ~ 0
+IN_B
+Wire Wire Line
+	2900 2275 3150 2275
+Wire Wire Line
+	2900 2175 3150 2175
+Text Label 3775 2175 0    50   ~ 0
+OUT_A
+Text Label 3775 2275 0    50   ~ 0
+OUT_B
+Wire Wire Line
+	4025 2275 3600 2275
+$Comp
+L power:GND #PWR01
+U 1 1 63461EDB
+P 3050 3175
+F 0 "#PWR01" H 3050 2925 50  0001 C CNN
+F 1 "GND" H 3055 3002 50  0000 C CNN
+F 2 "" H 3050 3175 50  0001 C CNN
+F 3 "" H 3050 3175 50  0001 C CNN
+	1    3050 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 634623E2
+P 3375 2075
+F 0 "#PWR02" H 3375 1825 50  0001 C CNN
+F 1 "GND" H 3380 1902 50  0000 C CNN
+F 2 "" H 3375 2075 50  0001 C CNN
+F 3 "" H 3375 2075 50  0001 C CNN
+	1    3375 2075
+	1    0    0    -1  
+$EndComp
+Connection ~ 3375 2075
+Wire Wire Line
+	3375 2075 2900 2075
+Text Label 2825 2575 0    50   ~ 0
+IN_A
+Wire Wire Line
+	3050 2875 3475 2875
+Connection ~ 3050 2875
+Text Label 3175 2875 0    50   ~ 0
+OUT_A
+Wire Wire Line
+	3050 2575 2650 2575
+$Comp
+L CRLG-Passive:R R3
+U 1 1 63464FDC
+P 4075 2725
+F 0 "R3" H 4005 2679 50  0000 R CNN
+F 1 "R" H 4005 2770 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4005 2725 50  0001 C CNN
+F 3 "" H 4075 2725 50  0001 C CNN
+	1    4075 2725
+	-1   0    0    1   
+$EndComp
+$Comp
+L CRLG-Passive:R R4
+U 1 1 63464FE6
+P 4075 3025
+F 0 "R4" H 4005 2979 50  0000 R CNN
+F 1 "R" H 4005 3070 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4005 3025 50  0001 C CNN
+F 3 "" H 4075 3025 50  0001 C CNN
+	1    4075 3025
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 63464FF0
+P 4075 3175
+F 0 "#PWR03" H 4075 2925 50  0001 C CNN
+F 1 "GND" H 4080 3002 50  0000 C CNN
+F 2 "" H 4075 3175 50  0001 C CNN
+F 3 "" H 4075 3175 50  0001 C CNN
+	1    4075 3175
+	1    0    0    -1  
+$EndComp
+Text Label 3850 2575 0    50   ~ 0
+IN_B
+Wire Wire Line
+	4075 2875 4500 2875
+Connection ~ 4075 2875
+Text Label 4200 2875 0    50   ~ 0
+OUT_B
+Wire Wire Line
+	4075 2575 3675 2575
+$EndSCHEMATC
